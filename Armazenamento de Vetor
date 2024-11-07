@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	int A[]={1,0,5,-2,-5,7};
+	A[4]= A[0]+A[1]+A[5];
+	printf("%d\n ",A[4]);
+	A[4] = A[4] + 100;
+	printf("%d",A[4]);
+	for(int i = 0; i < 6; i++){
+		printf("\n%d\n",A[i]);
+	}
+	
+	return 0;
+}
